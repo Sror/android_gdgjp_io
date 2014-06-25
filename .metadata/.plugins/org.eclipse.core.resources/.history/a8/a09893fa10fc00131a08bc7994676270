@@ -1,0 +1,5 @@
+package com.google.gdgjp.io.volley.adapter;
+
+public class BeerAdapter {
+
+}

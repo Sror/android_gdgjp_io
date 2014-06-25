@@ -1,0 +1,68 @@
+package com.google.gdgjp.io.volley.adapter;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.BaseAdapter;
+import android.widget.TextView;
+
+import com.android.volley.toolbox.NetworkImageView;
+import com.google.gdgjp.io.volley.R;
+import com.google.gdgjp.io.volley.model.Beer;
+
+public class BeerAdapter extends BaseAdapter {
+
+	private List<Beer> mItems;
+	private LayoutInflater mInflater;
+	
+	public BeerAdapter(LayoutInflater inflater) {
+		mInflater = inflater;
+		
+		mItems = new ArrayList<Beer>();
+	}
+	
+	@Override
+	public int getCount() {
+		return mItems.size();
+	}
+
+	@Override
+	public Object getItem(int position) {
+		return mItems.get(position);
+	}
+
+	@Override
+	public long getItemId(int position) {
+		return position;
+	}
+
+	@Override
+	public View getView(int position, View convertView, ViewGroup parent) {
+		ViewHolder holder;
+		
+		if (convertView == null) {
+			convertView = mInflater.inflate(R.layout.row_beer, parent, false);
+			
+			holder = new ViewHolder();
+			holder.beerName = (TextView) convertView.findViewById(R.id.tv_beer_name);
+			holder.thumb = (NetworkImageView) convertView.findViewById(R.id.iv_thumb);
+			
+			convertView.setTag(holder);
+		} else {
+			holder = (ViewHolder) convertView.getTag();
+		}
+		
+		return convertView;
+	}
+	
+	private class ViewHolder {
+		
+		public TextView beerName;
+		public NetworkImageView thumb;
+		
+	}
+
+}

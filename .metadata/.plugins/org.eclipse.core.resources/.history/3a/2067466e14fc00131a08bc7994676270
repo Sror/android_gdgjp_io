@@ -1,0 +1,15 @@
+package com.google.gdgjp.io.volley.model;
+
+public class Beer {
+
+	public String id;
+	public String name;
+	public String thumb;
+	
+	public Beer(String id, String name, String thumb) {
+		this.id = id;
+		this.name = name;
+		this.thumb = thumb;
+	}
+	
+}

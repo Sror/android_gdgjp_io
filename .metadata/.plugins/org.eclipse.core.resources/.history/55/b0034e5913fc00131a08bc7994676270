@@ -1,0 +1,58 @@
+package com.google.gdgjp.io.volley;
+
+import org.json.JSONObject;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.widget.ListView;
+import android.widget.Toast;
+
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.JsonObjectRequest;
+import com.google.gdgjp.io.volley.adapter.BeerAdapter;
+import com.google.gdgjp.io.volley.util.Constants;
+
+public class MainActivity extends Activity implements Listener<JSONObject>,
+ErrorListener {
+
+	private ListView mListView;
+	private BeerAdapter mAdapter;
+	
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        
+        // ListView Adapter
+        mAdapter = new BeerAdapter(getLayoutInflater());
+        
+        // ListView
+        mListView = (ListView) findViewById(R.id.list_view);
+        mListView.setAdapter(mAdapter);
+        
+        // Request data
+        requestBeers();
+    }
+    
+    /**
+     * Request beers list
+     */
+    private void requestBeers() {
+    	JsonObjectRequest req = new JsonObjectRequest(Constants.URL_BEERS, null, this, this);
+		ApplicationController.getInstance().addToRequestQueue(req);
+    }
+    
+    /**
+	 * Volley
+	 */
+	@Override
+	public void onResponse(JSONObject response) {
+		new ParseTask().execute(response);
+	}
+
+	@Override
+	public void onErrorResponse(VolleyError error) {
+		Toast.makeText(this, error.getMessage(), Toast.LENGTH_LONG).show();
+	}
+    
+}

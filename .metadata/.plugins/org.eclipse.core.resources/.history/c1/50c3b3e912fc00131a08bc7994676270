@@ -1,0 +1,5 @@
+package com.google.gdgjp.io.volley.util;
+
+public class Constants {
+
+}
