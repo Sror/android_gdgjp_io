@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="android.widget.BaseAdapter"/>
+<fullyQualifiedTypeName name="android.view.LayoutInflater"/>
+<fullyQualifiedTypeName name="com.google.gdgjp.io.volley.R"/>
+<fullyQualifiedTypeName name="android.widget.TextView"/>
+<fullyQualifiedTypeName name="com.google.gdgjp.io.volley.adapter.BeerAdapter.ViewHolder"/>
+<fullyQualifiedTypeName name="com.android.volley.toolbox.NetworkImageView"/>
+<fullyQualifiedTypeName name="com.google.gdgjp.io.volley.adapter.BeerAdapter"/>
+<fullyQualifiedTypeName name="com.google.gdgjp.io.volley.model.Beer"/>
+<fullyQualifiedTypeName name="android.os.AsyncTask"/>
+<fullyQualifiedTypeName name="com.google.gdgjp.io.volley.MainActivity"/>
+<fullyQualifiedTypeName name="org.json.JSONArray"/>
+<fullyQualifiedTypeName name="com.google.gdgjp.io.volley.util.Constants"/>
+<fullyQualifiedTypeName name="android.util.Log"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="com.google.gdgjp.io.volley.ApplicationController"/>
+<fullyQualifiedTypeName name="android.widget.AdapterView.OnItemClickListener"/>
+<fullyQualifiedTypeName name="com.android.volley.Cache.Entry"/>
+<fullyQualifiedTypeName name="com.google.gdgjp.io.volley.adapter.BeerStyleAdapter"/>
+<fullyQualifiedTypeName name="android.content.Intent"/>
+<fullyQualifiedTypeName name="com.google.gdgjp.io.volley.model.BeerStyle"/>
+<fullyQualifiedTypeName name="com.google.gdgjp.io.volley.BeersActivity"/>
+<fullyQualifiedTypeName name="com.android.volley.Response.Listener"/>
+<fullyQualifiedTypeName name="org.json.JSONObject"/>
+<fullyQualifiedTypeName name="javax.xml.transform.ErrorListener"/>
+<fullyQualifiedTypeName name="com.android.volley.Response.ErrorListener"/>
+<fullyQualifiedTypeName name="com.google.gdgjp.io.volley.R.drawable"/>
+</qualifiedTypeNameHistroy>

@@ -51,6 +51,9 @@ public class BeerAdapter extends BaseAdapter {
 			holder.beerName = (TextView) convertView.findViewById(R.id.tv_beer_name);
 			holder.thumb = (NetworkImageView) convertView.findViewById(R.id.iv_thumb);
 			
+			holder.thumb.setDefaultImageResId(R.drawable.ic_launcher);
+			holder.thumb.setErrorImageResId(R.drawable.ic_launcher);
+			
 			convertView.setTag(holder);
 		} else {
 			holder = (ViewHolder) convertView.getTag();
