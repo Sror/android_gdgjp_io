@@ -1,9 +1,0 @@
-package com.google.gdgjp.io.volley.adapter;
-
-import android.widget.BaseAdapter;
-
-public class BeerAdapter extends BaseAdapter {
-
-	
-	
-}

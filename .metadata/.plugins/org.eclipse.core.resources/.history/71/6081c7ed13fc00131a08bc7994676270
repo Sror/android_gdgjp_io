@@ -1,7 +1,0 @@
-package com.google.gdgjp.io.volley.util;
-
-public class Constants {
-
-	public static final String URL_BEERS = "http://api.brewerydb.com/v2/beers?styleId=52&key=9c740071c2d64a3b731ac4eee2f08102";
-	
-}
